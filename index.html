@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Js 6</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <h1> Data Pribadi</h1>
+    <div class="col" id="col">
+      <div class="profil" id="prof" >Profil</div>
+      <div class="moto" id="hidup">Moto Hidup</div>
+      <div class="keahlian" id="ahli">Keahlian</div>
+    </div>
+    <script>
+      let profile = { Nama: 'Suhardi', Alamat: 'Pusuk Lestari', Kampus: 'Universitas Hamzanwadi' };
+      let moto = { Hidup: 'Berani Mencoba, Gagal, dan Terus belajar," Setiap orang adalah Guru dan Setiap Tempat Adalah Sekolah"' };
+      let keahlian = { Teknologi: 'Belajar Coding' };
+
+      prof.addEventListener(
+        'click',
+        function (event) {
+          $(this).css(
+              
+            alert(' Profile:\nNama: ' + profile.Nama + '\nAlamat: ' + profile.Alamat + '\nKampus: ' + profile.Kampus)
+          );
+        },
+        false
+      );
+      hidup.addEventListener(
+        'click',
+        function (event) {
+          alert(' Moto Hidup:\n' + moto.Hidup);
+        },
+        false
+      );
+      ahli.addEventListener(
+        'click',
+        function (event) {
+          alert('Keahlian:\nTeknologi: ' + keahlian.Teknologi);
+        },
+        false
+      );
+    </script>
+  </body>
+</html>
